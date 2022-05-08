@@ -1,0 +1,17 @@
+{
+  "name": "server-side",
+  "version": "1.0.0",
+  "description": "HTTP Server for RESTfull API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server.http.api.rest"
+  ],
+  "author": "BOUZIR Mohamed Ali & BEN MABROUK ONS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
