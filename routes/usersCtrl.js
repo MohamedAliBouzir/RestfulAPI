@@ -16,7 +16,7 @@ module.exports = {
     var email    = req.body.email;
     var username = req.body.username;
     var password = req.body.password;
-    var bio      = req.body.bio;
+    var bio= req.body.bio;
 
     if (email == null || username == null || password == null) {
       return res.status(400).json({ 'error': 'missing parameters' });
@@ -162,6 +162,7 @@ module.exports = {
     asyncLib.waterfall([
       function(done) {
         models.User.findOne({
+          
           attributes: ['id', 'bio'],
           where: { id: userId }
         }).then(function (userFound) {
@@ -172,12 +173,13 @@ module.exports = {
         });
       },
       function(userFound, done) {
+        
         if(userFound) {
           userFound.update({
-            bio: (bio ? bio : userFound.bio)
+            bio: (bio? bio: userFound.bio)
           }).then(function() {
             done(userFound);
-          }).catch(function(err) {
+          }).catch(function(errr) {
             res.status(500).json({ 'error': 'cannot update user' });
           });
         } else {
