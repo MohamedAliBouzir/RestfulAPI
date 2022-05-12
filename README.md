@@ -21,8 +21,6 @@ Authentification RESTful API is an academic project in which we were asked to cr
 * [mysql](https://www.npmjs.com/package/mysql) : This is a node.js driver for mysql. It is written in JavaScript, does not require compiling, and is 100% MIT licensed.
 * [JsonWebToken](https://www.npmjs.com/package/jsonwebtoken) : JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties.  The claims in a JWT are encoded as a JSON object that is used as the payload of a JSON Web Signature (JWS) structure or as the plaintext of a JSON Web Encryption (JWE) structure, enabling the claims to be digitally signed or integrity protected with a Message Authentication Code (MAC) and/or encrypted.
 * [BCrypt](https://www.npmjs.com/package/bcrypt) : bcrypt is a password-hashing function designed by Niels Provos and David Mazières, based on the Blowfish cipher and presented at USENIX in 1999.
-
-[]() : 
 ## 🌳 Project tree
 ```text
   ├───config
